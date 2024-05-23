@@ -26,7 +26,7 @@ def is_win():
     return sys.platform == "win32"
 
 
-assert sys.version_info.major == 3 and sys.version_info.minor >= 6 and sys.version_info.minor < 12, \
+assert sys.version_info.major == 3 and sys.version_info.minor >= 6 and sys.version_info.minor < 13, \
     "python version >= 3.6, <3.12 is required"
 
 this_directory = path.abspath(path.dirname(__file__))
@@ -39,7 +39,7 @@ print("We will install the following packages: ", packages)
 install_requires = [
     "requests",
     "gymnasium>=0.28",
-    "numpy>=1.21.6",
+    "numpy>=1.26.0",
     "matplotlib",
     "pandas",
     "pygame",
@@ -49,7 +49,8 @@ install_requires = [
     "tqdm",
     "progressbar",
     # "panda3d==1.10.8",
-    "panda3d==1.10.13",
+    #"panda3d==1.10.13",
+    "panda3d==1.10.14",
     "panda3d-gltf==0.13",  # 0.14 will bring some problems
     "pillow",
     "pytest",
@@ -82,7 +83,7 @@ ros_requirement = [
 
 setup(
     name="metadrive-simulator",
-    python_requires='>=3.6, <3.12',  # do version check with assert
+    python_requires='>=3.6, <3.13',  # do version check with assert
     version=VERSION,
     description="An open-ended driving simulator with infinite scenes",
     url="https://github.com/metadriverse/metadrive",
@@ -102,7 +103,7 @@ setup(
 )
 
 """
-How to publish to pypi and Draft github Release?  Noted by Zhenghao and Quanyi in Dec 27, 2020.
+How to publish to pypi and Draft github Release?  Noted by Zhenghao and Quanlyi in Dec 27, 2020.
 
 0. Checkout a new branch from main called releases/x.y.z
 
