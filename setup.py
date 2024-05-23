@@ -103,7 +103,7 @@ setup(
 )
 
 """
-How to publish to pypi and Draft github Release?  Noted by Zhenghao and Quanyi in Dec 27, 2020.
+How to publish to pypi and Draft github Release?  Noted by Zhenghao and Quanlyi in Dec 27, 2020.
 
 0. Checkout a new branch from main called releases/x.y.z
 
